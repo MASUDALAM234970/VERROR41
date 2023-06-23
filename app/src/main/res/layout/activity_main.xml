@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0DA2EA"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+      <ImageView
+
+          android:layout_marginTop="100dp"
+          android:layout_width="180dp"
+          android:layout_height="180dp"
+          android:layout_gravity="center"
+          android:src="@drawable/baseline_video_call_24"
+
+          />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="VERROR_Call"
+               android:layout_gravity="center"
+               android:textSize="20sp"
+               />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's get Started"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="32sp"
+            android:background="#00ACC1"
+            android:textStyle="italic"
+            />
+        <EditText
+
+             android:id="@+id/user_ET"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginHorizontal="41dp"
+            android:hint="User ID"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:paddingHorizontal="12dp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:id="@+id/start_btn"
+            />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0DA2EA"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".CallActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/hey_user_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey User"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="32sp"
+
+        android:textStyle="italic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's  get  Started"
+
+        android:layout_marginTop="30dp"
+        android:textSize="32sp"
+
+        android:textStyle="italic"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp">
+        <EditText
+
+            android:id="@+id/user_ET"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="User ID"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerVertical="true"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_toLeftOf="@id/voice_callbtn"
+
+            />
+        <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/voice_callbtn"
+            android:layout_toLeftOf="@id/video_callbtn"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+            android:id="@+id/video_callbtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginHorizontal="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
